@@ -1,0 +1,29 @@
+{
+    "simulation": {
+        "default_duration": 300,
+        "test_directory": "/tmp/malsim_test",
+        "max_file_operations": 100,
+        "safe_mode": true
+    },
+    "monitoring": {
+        "process_monitor": true,
+        "file_monitor": true,
+        "network_monitor": true,
+        "log_level": "INFO"
+    },
+    "dashboard": {
+        "host": "127.0.0.1",
+        "port": 5000,
+        "debug": true,
+        "auto_refresh": 5
+    },
+    "database": {
+        "path": "malsim_analysis.db",
+        "backup_enabled": true
+    },
+    "safety": {
+        "require_vm": true,
+        "vm_indicators": ["virtualbox", "vmware", "qemu", "xen", "kvm"],
+        "auto_cleanup": true
+    }
+}
